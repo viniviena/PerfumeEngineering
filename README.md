@@ -58,11 +58,8 @@ pip install rdkit-pypi
 
 The main script sets up the model, selects ingredients, defines utility functions, and performs the diffusion simulation. Run the script using Julia:
 
-```julia
-include("main_script.jl")
-```
 
-For more details on the code, refer to the inline comments and function definitions within the script.
+For more details on the code, please take a look at the inline comments and function definitions within the script.
 
 ## License
 
