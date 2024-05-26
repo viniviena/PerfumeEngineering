@@ -204,7 +204,7 @@ ub = ones(8)
 s1 = QuasiMonteCarlo.sample(N, lb, ub, SobolSample())
 tosample_d = [Dair_pdfs; Tsat_pdfs]
 SamplesQuasi = map(x -> quantile.(tosample_d, s1[:, x]), 1:particles)
-scatter(SamplesQuasi[1, :], SamplesQuasi[2, :])
+#scatter(SamplesQuasi[1, :], SamplesQuasi[2, :])
 
 
 #Cache for solutions
@@ -216,7 +216,7 @@ saveats = 100.0
 tmax = 3600.0*5
 #tmax = 60.0*10.0
 Chains = ones(all_variables, Int(tmax/saveats + 1), particles);
-idx_50 = argmin(abs.(domain[2:end - 1] .- 0.20))
+idx_50 = argmin(abs.(domain[2:end - 1] .- 0.50))
 idx_100 = argmin(abs.(domain[2:end - 1] .- 1.0))
 
 function save_at_chains(ODEsolutionArray, i)
