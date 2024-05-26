@@ -4,7 +4,7 @@ This repository contains the necessary codes to reproduce the results of the man
 ```markdown
 # Scent Diffusion Model
 
-This repository contains code for modeling the diffusion of various scent molecules in air using Julia. The model utilizes Partial Differential Equations (PDEs) and Monte Carlo sampling to simulate the diffusion process.
+This repository contains code for modeling the diffusion of various scent molecules in air using Julia.
 
 ## Requirements
 
